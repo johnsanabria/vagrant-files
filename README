@@ -1,0 +1,4 @@
+This repository offers different scripts to create virtual machines using the Vagrant tool. 
+More details about Vagrant can be obtained from its web site http://vagrantup.com
+The **basic** directory has a very basic Vagrantfile which is created when the "vagrant init" command is executed.
+The **cluster** directory has a Vagrantile which creates three virtual machines. Three machines have the same configuration except by their names in the VirtualBox context
