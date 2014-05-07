@@ -1,6 +1,6 @@
 Vagrant.configure("2") do |config|
 	config.vm.define :master do |node|
-		node.vm.box = "precise64"
+		node.vm.box = "centos6.4"
 		node.vm.hostname = "master"
 		node.vm.network :private_network, ip: "10.10.10.2", netmask: "255.255.255.0"
 		node.vm.provider :virtualbox do |vb|
@@ -8,7 +8,7 @@ Vagrant.configure("2") do |config|
 		end
 	end
 	config.vm.define :node01 do |node|
-		node.vm.box = "precise64"
+		node.vm.box = "centos6.4"
 		node.vm.hostname = "client"
 		node.vm.network :private_network, ip: "10.10.10.3", netmask: "255.255.255.0"
 		node.vm.provider :virtualbox do |vb|
@@ -16,7 +16,7 @@ Vagrant.configure("2") do |config|
 		end
 	end
 	config.vm.define :node02 do |node|
-		node.vm.box = "precise64"
+		node.vm.box = "centos6.4"
 		node.vm.hostname = "client"
 		node.vm.network :private_network, ip: "10.10.10.4", netmask: "255.255.255.0"
 		node.vm.provider :virtualbox do |vb|
